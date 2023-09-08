@@ -1,0 +1,104 @@
+<!--SITE DESCODIFICADAS (VEGRANGO) - PÁGINA REFEICOES-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="refeicoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>VegRango Quentinhas - Refeições</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="imagens descod/vegRango logo.png">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div id="fundo-com-imagem">
+            <section id="navbar">
+                <!--se nao separar os dois links a posicao fica errada-->
+                <a id="logo-link" href="index.html"><img class="logo" src="imagens descod/vegRango logo.png"
+                        alt="Logo da empresa" title="VegRango Quentinhas" /></a>
+                <a id="texto-logo-link" href="index.html"><span id="texto-logo">VegRango Quentinhas</span></a>
+                <nav class="menu">
+                    <ul class="topicos-menu">
+                        <li>
+                            <a id="sublinhado-pg-inic" href="index.html">Página inicial</a>
+                        </li>
+                        <li>
+                            <a id="sublinhado-pg-refeic" href="refeicoes.html">Refeições</a>
+                        </li>
+                        <li id="icone-media">
+                            <a id="sublinhado pg-midia" href="na-midia.html">Na mídia</a>
+                        </li>
+                        <!--posso colocar dois ids no mesmo elemento em tags diferentes?-->
+                    </ul>
+
+                    <!--SEARCH BAR-->
+                    <div class="search-container">
+                        <form action="/search" method="get">
+                            <input class="search expandright" id="searchright" type="search" name="q"
+                                placeholder="Search" />
+                            <label class="button searchbutton" for="searchright"><span
+                                    class="mglass">&#9906;</span></label>
+                        </form>
+                    </div>
+                </nav>
+            </section>
+
+            <section id="titulo-subtitulo">
+                <h1 id="titulo">Refeições</h1>
+            </section>
+        </div>
+    </header>
+    <!--MAIN-->
+    <main>
+        <br>
+        <h3 id="semana">Semana de 06-03-2023 a 10-03-2023</h3>
+        <br>
+        <section id="opcao1-section">
+            <h4>Opção 1</h4>
+            <h2>Macarrão ao pesto com vegetais</h2>
+            <br>
+            <img id="macarrao" src="imagens descod/fundoPaginaRefeicoes.jpg" alt="Macarrão" title="Macarrão ao molho pesto com vegetais">
+            <br><br><br>
+            <h5>Fusilli integral ao pesto de manjericão e castanha de caju com brócolis, tomate e abobrinha grelhados
+            </h5>
+        </section>
+
+        <section id="opcao2-section">
+            <br>
+            <h4>Opção 2</h4>
+            <h2>Poke de tofu</h2>
+            <br>
+            <img id="poke" src="imagens descod/poke-de-tofu-vegano.jpeg" alt="Poke" title="Prato de Poke Vegano">
+            <br><br><br>
+            \<h5>Arroz integral, tofu grelhado no shoyo com cebola, abacate, pepino, rabanete, cebola roxa, gergelim,
+                salsinha</h5>
+        </section>
+
+        <section id="opcao3-section">
+            <br>
+            <h4>Opção 3</h4>
+            <h2>Moqueca de banana-da-terra</h2>
+            <br>
+            <img id="moqueca" src="imagens descod/moqueca.jpg" alt="Moqueca" title="Prato de moqueca de banana da banana-da-terra">
+            <br><br><br>
+            <h5>Moqueca de banana-da-terra feita com leite de coco caseiro acompanhada de arroz de brócolis e farofa
+            </h5>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="rodape">
+        <div id="rodapetexto"> Criado por Joana Castañon para fins de aprendizagem (VegRango é uma empresa fictícia)</div>
+    </footer>
+    <!-- CHAMADA DE ARQUIVO JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>
