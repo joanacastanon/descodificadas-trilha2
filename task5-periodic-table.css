@@ -1,0 +1,56 @@
+* {
+    font-family: sans-serif;
+}
+
+#caption {
+    font-size: x-large;
+    font-weight: bold;
+/*     padding-bottom:1%; */
+}
+
+#tabela {
+    text-align: center;
+    border: none;
+    border-collapse: collapse; /*avoids double borders*/
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+
+/* .number-outside {
+
+} */
+
+td {
+/*     padding: 100%
+    width: 20px;  */  
+    text-align: center;
+    border: 1px solid black;
+/*     width: 60%;
+    height: 60%; */
+}
+
+.blank {
+    border-style: none;
+    background-color: white;
+}
+
+#row-8, #lanthanoids {
+    background-color: #f1ba9b;
+}
+
+#row-9, #actinoids {
+    background-color: #e5885c;
+}
+
+.symbol {
+    font-weight: bold;
+    font-size: 140%;
+}
+
+#footer {
+    float: right;
+    margin-bottom: 2%;
+    margin-right: 5.5%;
+    margin-top: 0.1%;
+}
+
