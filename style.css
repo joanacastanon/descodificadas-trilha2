@@ -4,24 +4,41 @@
     font-family: sans-serif; /*para se Roboto nao estiver disponível*/
     font-family: Roboto;
     font-weight: normal; /*padrao para h1 é negrito, entao o titulo estava ficando em negrito tb*/
-    margin-top: 0;
 }
 
 body {
     background-color:  #f5f5f5;
-    margin: 0; 
+    margin: 0; /*pq espaco de cima nao sai?*/ 
 }
 
+/* img {
+    z-index: -2;
+    position: relative;
+} */
+
 /* HEADER */
-#fundo-com-imagem {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.5)), url("home-page-background.jpg"); /*escurece imagem*/
-    width: 100%;
-    height: 483.17px;
-/*  border-bottom: 500px;
-    border-color:  rgba(12,128,121,1); */
-    z-index: -1; /*nao faz diferenca*/
+.carousel-slide {
+    height: 10%;
+/*     width: 100%;
+    height: 483.17px; */
+/*     border-bottom: 500px;
+    border-color:  rgba(12,128,121,1);  */
+/*  background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.5)), url("home-page-background.jpg"); */ /*escurece imagem*/
 }
+
+#carrossel{
+    padding-top: none;
+    position: absolute; /*para que z-index funcione, position deve ser absolute - checar*/
+    z-index: -1;
+    width: 100%;
+}
+
+/*NAO CONSIGO AUMENTAR IMAGEM 1 OU DIMINUIR 2 E 3 */
+/* .carousel-inner {
+    height: 10%;
+} */
+
 
 #navbar {
     display: inline-flex; /*diferenca entre inline-flex e inline?*/
@@ -31,7 +48,7 @@ body {
     font-weight: bold; */
     justify-content: space-between; /*sem isso o text-align: left dos topicos nao funciona*/
     width: 100%;
-    height: 56px;
+    height: 10%;
     position: fixed;
     z-index: 1;
 /*  flex-direction: row; */
@@ -45,18 +62,19 @@ body {
 
 .logo {
     display: inline-flex;
-    width: 54.54px;
-    height: 45,36px;
+    width: ;
+    height: 70%;
     text-align: left;
     padding: 5% 30%;
     box-sizing: content-box; /* default */
+    padding-top: 15%;
 }
 
 #texto-logo {
     display: inline-flex;
     position: relative;
     right: 145%;
-    font-size: 20px;
+    font-size: 200%;
     color: white;
 }
 
@@ -77,12 +95,14 @@ body {
     bottom: 10%;
     text-align: right;
     list-style-type: none; /*tira bolinha dos topicos*/
+    font-size: 130%;
+    padding-top: 5%;
 }
 
 .menu .topicos-menu a {
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 120%;
     color: white;
     font-weight: bolder;
     text-decoration: none; /* tira sublinhado default */
@@ -103,7 +123,7 @@ body {
 /* busca navbar */
 .button {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 150%;
 	height: 28px;
 	line-height: 50px;
 	color: white;
@@ -136,10 +156,9 @@ body {
 
 .searchbutton {
     position: absolute;
-	font-size: 30px;
+	font-size: 200%;
 	width: 100%;
 	margin: 0;
-	padding: 0;
 }
 
 .search:focus + .searchbutton {
@@ -185,24 +204,26 @@ body {
 #titulo-subtitulo {
     position: relative;
     top: 25%;
-    padding: 0px;
+    padding: 20%;
     color: white;
     text-align: center;
-
 }
 
 #titulo {
     font-size: 63pt;
     margin: auto;
-    padding-bottom: 30px;
+    padding: 10%;
+    font-size: 700%;
+    font-weight: bolder;
 }
 
 #subtitulo {
-    font-size: 21.3px;
+    font-size: 300%;
+    font-weight: bolder;
 }
+/*FIM HEADER*/
 
-
-/* MAIN */
+/* INICIO MAIN */
 
 .pedido, .entregas{
     text-align: center;
