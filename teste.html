@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Carousel Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="teste.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+      <!-- favicon, imagenzinha no browser -->
+      <link rel="icon" type="image/x-icon" href="veg-rango-logo.png">
+
+</head>
+<body>
+
+<header>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.oficinadanet.com.br/media/post/25197/330/images.jpg" alt="Image1" width="1920" height="1080">
+    </div>
+    <div class="carousel-item">
+      <img src="Image2.jpg" alt="Image2" width="1920" height="1080">
+    </div>
+    <div class="carousel-item">
+      <img src="Image3.jpg" alt="Image3" width="1920" height="1080">
+    </div>
+  </div>
+
+</div>
+<div id="frontpage">
+hghgfjgj
+</div>
+</header>
+
+<main>
+    <section class="pedido">
+        <p id="missao">
+            <br />Somos uma empresa familiar que quer levar o melhor da comida
+            vegana para a sua casa
+        </p>
+        <p id="facapedido">
+            <br />Para fazer seu pedido, clique no link ou preencha o formulário
+            abaixo<br /><br />
+        </p>
+        <button class="botao" id="botaopedido"
+            onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScbv3CzDmtqu7aEmdw9wQOij-G2aeYhGdz5b9rJq9U_jLjOhg/viewform', '_blank')">
+            Faça seu pedido!
+        </button>
+        <div id="formulario">
+            <iframe id="formulario"
+                src="https://docs.google.com/forms/d/e/1FAIpQLScbv3CzDmtqu7aEmdw9wQOij-G2aeYhGdz5b9rJq9U_jLjOhg/viewform?embedded=true"
+                width="640" height="1392" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+    </section>
+
+    <br /><br /><br />
+    <section class="entregas">
+        <span id="entregastitulo">Entregas</span>
+        <br /><br /><br />
+        <span id="entregasinfo">Entregamos em qualquer estação de metrô do Rio de Janeiro</span>
+        <br />
+        <div id="mapa">
+            <div style="
+          text-decoration: none;
+          overflow: hidden;
+          max-width: 100%;
+          width: 700px;
+          height: 500px;
+          margin: 0 auto;
+          padding: 20px;
+        ">
+                <div id="embedded-map-display" style="height: 100%; width: 100%; max-width: 100%">
+                    <iframe style="height: 100%; width: 100%; border: 0" frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=Cidade+Rio+de+Janeiro,+Rio+de+Janeiro+-+State+of+Rio+de+Janeiro,+Brazil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div>
+                <style>
+                    #embedded-map-display img {
+                        max-height: none;
+                        max-width: none !important;
+                        background: none !important;
+                    }
+                </style>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
