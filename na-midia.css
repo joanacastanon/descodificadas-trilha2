@@ -233,6 +233,7 @@ The vertical lines 1 and 2 determine the start and end points of the first colum
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(15,5vw); /* 5vw: 5% of viewport width  */
     grid-gap: 5px;
+    padding-left: 10%;
 }
 
 .album_img {
@@ -244,69 +245,76 @@ The vertical lines 1 and 2 determine the start and end points of the first colum
 Note: The object fit property only works if we set the width and height properties. */
 }
 
-.album_item-1 {
-    grid-column-start: 1;
+.album_item-1 { /*churrasco seitan*/
+    grid-column-start: 1; 
     grid-column-end: 5;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 8;
 }
 
-.album_item-2 {
+.album_item-2 { /*nhoque pesto nozes*/
     grid-column-start: 5;
     grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 6;
 }
 
-.album_item-3 {
+.album_item-3 { /*mix legumes*/
     grid-column-start: 5;
     grid-column-end: 12;
-    grid-row-start: 4;
-    grid-row-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 11;
 }
 
-.album_item-4 {
+.album_item-4 { /*salada tofu*/
     grid-column-start: 6;
     grid-column-end: 9;
-    grid-row-start: 8;
-    grid-row-end: 12;
+    grid-row-start: 11;
+    grid-row-end: 15;
 }
 
-.album_item-5 {
+.album_item-5 {  /*dumpling*/
     grid-column-start: 3;
     grid-column-end: 6;
-    grid-row-start: 8;
-    grid-row-end: 12;
+    grid-row-start: 11;
+    grid-row-end: 15;
 }
 
-.album_item-6 {
-    grid-column-start: 9;
-    grid-column-end: 12;
+.album_item-6 {  /*salada lentilhas*/
+    grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: 8;
-    grid-row-end: 12;
+    grid-row-end: 11;
 }
 
-.album_item-7 {
+.album_item-7 { /*yakissoba*/
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 8;
-    grid-row-end: 12;
+    grid-row-start: 11;
+    grid-row-end: 15;
 }
 
-.album_item-8 {
+.album_item-8 { /*sopa abóbora*/
     grid-column-start: 8;
     grid-column-end: 12;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.album_item-9 { /*macarrao ao funghi*/
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 11;
+    grid-row-end: 15;
 }
 
 #midia-section {
     text-align: center;
-    margin-top: 2%;
 }
 
 #midia-texto {
     font-size: 40px;
+    margin-bottom: 5%;
 }
 
 #midia-video {
