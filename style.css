@@ -256,28 +256,46 @@ body {
     height: 35px;
     width: 360px;
     font-weight: bold;
+    transition: background-color 0.7s, color 0.7s;
 }
+
+#botaopedido:hover {
+    color:  rgba(12,128,121,1);
+    background-color: white;
+}
+
 #formulario{
     height: 500px;
-
 }
 
 #mapa {
     padding: 20px;
 }
 
-.flex-container { /*nao esta dando certo*/
+.clientes {
+    text-align: center;
+}
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
+    text-align: center;
     width: 20%;
-    display: flex;
-    flex-direction: column;
+    height: 20%;
+    margin: 3%;
+}
+
+.card-body {
+    border: 1px solid rgba(12,128,121,1);
 }
 
 .card-title {
-    font-weight: bold;
+    font-weight: bolder;
+    color:rgba(12,128,121,1);
 }
 
 /* RODAPE */
