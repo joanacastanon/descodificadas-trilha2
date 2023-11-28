@@ -106,9 +106,37 @@ body {
     text-decoration: none; /* tira sublinhado default */
 }
 
-.menu .topicos-menu a:hover {
+.topicos-menu a:hover {
     color: lightgray;
 }
+
+/* Styles for the dropdown content (hidden by default) */
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Styles for the dropdown items */
+  .menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color on hover for dropdown items */
+  .menu .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown items when the "Página inicial" link is hovered over */
+  .menu .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 /* deixa sublinhado verde apenas na página que está sendo acessada */
 #sublinhado-pg-inic {

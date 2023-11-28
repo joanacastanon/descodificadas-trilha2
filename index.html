@@ -63,20 +63,33 @@
                 <a id="logo-link" href="index.html"><img class="logo" src="veg-rango-logo.png"
                         alt="Logo da empresa" title="VegRango Quentinhas" /></a>
                 <a id="texto-logo-link" href="index.html"><span id="texto-logo">VegRango Quentinhas</span></a>
+                
                 <nav class="menu">
                     <ul class="topicos-menu">
-                        <li>
+                        <li class="dropdown">
                             <a id="sublinhado-pg-inic" href="index.html">Página inicial</a>
+                            <div class="dropdown-content">
+                                <a href="#facapedido">Faça seu pedido</a>
+                                <a href="#clientestitulo">Opiniões de clientes</a>
+                                <a href="#entregastitulo">Entrega</a>
+                            </div>
                         </li>
-                        <li>
+                        <li class="dropdown">
                             <a id="sublinhado-pg-refeic" href="refeicoes.html">Refeições</a>
+                            <div class="dropdown-content">
+                                <a href="refeicoes.html#semana">Pratos da semana</a>
+                            </div>
                         </li>
-                        <li id="icone-media">
+                        <li id="icone-media" class="dropdown">
                             <a id="sublinhado pg-midia" href="na-midia.html">Galeria</a>
+                            <div class="dropdown-content">
+                                <a href="na-midia.html#album">Fotos</a>
+                                <a href="na-midia.html#midia-section">Na mídia</a>
+                            </div>
                         </li>
                         <!--posso colocar dois ids no mesmo elemento em tags diferentes?-->
                     </ul>
-
+                </div>
                     <!--SEARCH BAR-->
                     <div class="search-container">
                         <form action="/search" method="get">
@@ -89,7 +102,6 @@
                 </nav>
             </section>
         
-
         <section id="titulo-subtitulo">
             <h3 id="subtitulo">Quentinhas veganas</h3>
             <h1 id="titulo">VegRango</h1>
